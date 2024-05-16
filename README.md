@@ -83,7 +83,7 @@ def main():
     messagebox.showinfo(PROGRAM_NAME, f"ようこそ {PROGRAM_NAME} へ")
 
     # ファイルパスを指定
-    file_path = r"C:\Users\User\Desktop\test\x=0 - コピー.pl3"
+    file_path = r"C:\Users\User\Documents\プログラム\BinaryReplaceSaver\x=BinaryReplaceSaver.pl3"
     
     if not os.path.exists(file_path):
         messagebox.showerror("エラー", f"ファイルが見つかりません: {file_path}")
