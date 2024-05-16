@@ -1,30 +1,3 @@
----
-
-# BinaryReplaceSaver
-
-BinaryReplaceSaverは、バイナリファイル内の特定の文字列をユーザーが入力した新しい文字列に置き換え、新しいファイル名で保存するためのツールです。このツールは、特定のファイル内の数値を置換するためのGUIインターフェースを提供します。
-
-## 機能
-- バイナリファイル内の特定の文字列を置換
-- 置換後のファイルを新しい名前で保存
-- ユーザー入力のためのGUIインターフェースを提供
-
-## インストール
-
-このツールを使用するためには、Pythonがインストールされている必要があります。Pythonがインストールされていない場合は、[Python公式サイト](https://www.python.org/)からインストールしてください。
-
-### 必要なライブラリ
-このプログラムは、以下のPythonライブラリを使用します：
-- tkinter
-
-これらのライブラリはPythonの標準ライブラリとして提供されているため、追加のインストールは不要です。
-
-## 使い方
-
-1. プログラムをダウンロードし、任意のディレクトリに保存します。
-2. 以下のコードをテキストエディタにコピーし、`binary_replace_saver.py` という名前で保存します。
-
-```python
 import tkinter as tk
 from tkinter import simpledialog, messagebox
 import os
@@ -83,7 +56,7 @@ def main():
     messagebox.showinfo(PROGRAM_NAME, f"ようこそ {PROGRAM_NAME} へ")
 
     # ファイルパスを指定
-    file_path = r"C:\Users\User\Desktop\test\x=0 - コピー.pl3"
+    file_path = r"C:\Users\User\Documents\プログラム\BinaryReplaceSaver\x=BinaryReplaceSaver.pl3"
     
     if not os.path.exists(file_path):
         messagebox.showerror("エラー", f"ファイルが見つかりません: {file_path}")
@@ -96,20 +69,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
-
-3. コマンドプロンプトまたはターミナルを開き、プログラムが保存されたディレクトリに移動します。
-4. 以下のコマンドを実行してプログラムを開始します：
-
-```sh
-python binary_replace_saver.py
-```
-
-5. プログラムが起動すると、指定されたファイル（例：`C:\Users\User\Desktop\test\x=0 - コピー.pl3`）の文字列置換を行うためのGUIインターフェースが表示されます。ユーザーは指定された文字列に置換する新しい数値を入力します。
-
-6. 置換が完了すると、新しいファイル名で保存されます。例えば、`x=0.txp`が`x=123.txp`に置換された場合、新しいファイル名は`x=123.pl3`になります。
-
-## ライセンス
-このプロジェクトはMITライセンスの下でライセンスされています。詳細については、LICENSEファイルを参照してください。
-
----
